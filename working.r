@@ -1,0 +1,7 @@
+filename <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+temp <- tempfile()
+download.file(filename,temp,mode="wb")
+mydata <- read.csv(temp)
+rm(list = c("filename","temp"))
+
+   
